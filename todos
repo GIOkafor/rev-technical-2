@@ -1,0 +1,6 @@
+- replace &quot; with "" (quotationPipe)
+- add/remove from favourites feature
+  - button
+  - action on page
+  - connect with API (optional)
+  
