@@ -1,7 +1,6 @@
 import { Component, Input } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { map } from "rxjs/operators";
-import { FavoritesService } from "./favorites.service";
 
 @Component({
   selector: "hello",
@@ -20,10 +19,7 @@ export class HelloComponent {
   uid = "iyk300stacks";
   favorites: any;
 
-  constructor(
-    private http: HttpClient,
-    private favoritesSvc: FavoritesService
-  ) {}
+  constructor(private http: HttpClient) {}
 
   ngOnInit() {
     this.items = this.getJokes();
@@ -35,15 +31,9 @@ export class HelloComponent {
     return this.http.get(url).pipe(map((result: any) => result.value));
   }
 
-  getFavorites(uid) {
-    return this.favoritesSvc.getFavorites(uid);
-  }
+  getFavorites(uid) {}
 
-  addFavorite(uid, item) {
-    return this.favoritesSvc.addFavorite(uid, item);
-  }
+  addFavorite(uid, item) {}
 
-  removeFavorite(uid, item) {
-    this.favoritesSvc.removeFavorite(uid, item);
-  }
+  removeFavorite(uid, item) {}
 }

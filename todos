@@ -1,4 +1,4 @@
-- replace &quot; with "" (quotationPipe)
+- replace &quot; with "" (using QuotePipe)
 - add/remove from favourites feature
   - buttons
   - action on page

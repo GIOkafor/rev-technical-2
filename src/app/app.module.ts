@@ -9,7 +9,6 @@ import { AngularFirestoreModule } from "@angular/fire/firestore";
 import { AppComponent } from "./app.component";
 import { HelloComponent } from "./hello.component";
 import { FavoritesService } from "./favorites.service";
-import { QuotePipe } from "./quote.pipe";
 
 const firebaseConfig = {
   apiKey: "",
@@ -29,7 +28,7 @@ const firebaseConfig = {
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule
   ],
-  declarations: [AppComponent, HelloComponent, QuotePipe],
+  declarations: [AppComponent, HelloComponent],
   providers: [FavoritesService],
   bootstrap: [AppComponent]
 })
