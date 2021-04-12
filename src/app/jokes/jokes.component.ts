@@ -3,8 +3,8 @@ import { HttpClient } from "@angular/common/http";
 import { map } from "rxjs/operators";
 
 @Component({
-  selector: "hello",
-  templateUrl: "./hello.component.html",
+  selector: "jokes",
+  templateUrl: "./jokes.component.html",
   styles: [
     `
       h1 {
@@ -13,8 +13,7 @@ import { map } from "rxjs/operators";
     `
   ]
 })
-export class HelloComponent {
-  @Input() name: string;
+export class JokesComponent {
   items: any;
   uid = "iyk300stacks";
   favorites: any;

@@ -7,7 +7,7 @@ import { AngularFireModule } from "@angular/fire";
 import { AngularFirestoreModule } from "@angular/fire/firestore";
 
 import { AppComponent } from "./app.component";
-import { HelloComponent } from "./hello.component";
+import { JokesComponent } from "./jokes/jokes.component";
 import { FavoritesService } from "./favorites.service";
 
 const firebaseConfig = {
@@ -28,7 +28,7 @@ const firebaseConfig = {
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule
   ],
-  declarations: [AppComponent, HelloComponent],
+  declarations: [AppComponent, JokesComponent],
   providers: [FavoritesService],
   bootstrap: [AppComponent]
 })

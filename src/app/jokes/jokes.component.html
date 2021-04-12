@@ -1,0 +1,20 @@
+<div>
+  <h3>Chuck Norris Jokes</h3>
+  <div *ngIf="items|async as items$">
+    <h5>Random Jokes</h5>
+    <div class="d-flex flex-column p-2">
+      <span *ngFor="let item of items$">
+        {{item.id}} - {{item.joke}}
+      </span>
+    </div>
+  </div>
+
+  <div class="favs">
+    <h5>Favorite Jokes:</h5>
+    <div class="d-flex flex-column p-2">
+      <div class="mb-1" *ngFor="let fav of favorites|async">
+        <span>{{fav.id}} - {{fav.joke}}</span>
+      </div>
+    </div>
+  </div>
+</div>
